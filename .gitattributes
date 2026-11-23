@@ -1,0 +1,2 @@
+# Count notebooks as documentation, so GitHub's language bar reflects the Python code.
+*.ipynb linguist-documentation

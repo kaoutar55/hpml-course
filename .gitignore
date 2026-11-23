@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.modal.toml
+*.nsys-rep
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+data/
+profiles/
+.DS_Store

@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: >-
+  If you reuse these course materials, please cite them as below.
+  The code is under the MIT license (LICENSE). The teaching content
+  (notebook text, documentation, figures, simulation text) is under
+  CC BY 4.0 (LICENSE-CONTENT.md).
+type: software
+title: "High-Performance Machine Learning (COMS E6998): course materials"
+authors:
+  - family-names: El Maghraoui
+    given-names: Kaoutar
+date-released: 2026-11-23
+repository-code: "https://github.com/kaoutar55/hpml-course"
+url: "https://kaoutarelmaghraoui.com/hpml/"
+license: MIT
+keywords:
+  - machine learning systems
+  - PyTorch
+  - profiling
+  - torch.compile
+  - distributed training
+preferred-citation:
+  type: generic
+  title: "High-Performance Machine Learning (COMS E6998): course materials"
+  authors:
+    - family-names: El Maghraoui
+      given-names: Kaoutar
+  year: 2026
+  url: "https://github.com/kaoutar55/hpml-course"
+  notes: "Code under MIT; teaching content under CC BY 4.0."

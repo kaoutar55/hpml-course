@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HPML Interactive Simulations</title>
+<meta name="description" content="Interactive simulations from the Columbia HPML course: distributed data parallelism and LLM-scale parallelism.">
+<style>
+:root{--ink:#161616;--muted:#525252;--line:#E0E0E0;--blue:#0F62FE;--panel:#F4F4F4;--sans:'IBM Plex Sans',Helvetica,Arial,sans-serif;--mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.5;padding:24px max(16px,env(safe-area-inset-right,0px)) 56px max(16px,env(safe-area-inset-left,0px))}
+.wrap{max-width:1100px;margin:0 auto}.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+h1{font-weight:300;font-size:clamp(28px,4vw,44px);margin:4px 0 8px}.lead{font-size:19px;max-width:70ch;color:var(--muted);margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:20px}
+.card{border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:10px}
+.card .tag{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.card h2{font-size:24px;font-weight:600;margin:0}.card h2 a{color:var(--ink);text-decoration:none}.card h2 a:hover{text-decoration:underline}
+.card p{margin:0;color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+.chips a{font-family:var(--mono);font-size:13px;text-decoration:none;color:var(--ink);padding:6px 10px;border:1px solid var(--line)}.chips a:hover{background:var(--panel)}
+a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.note{margin-top:28px;font-size:15px;color:var(--muted);max-width:75ch}
+</style></head><body><div class="wrap">
+<div class="eyebrow">HPML | Columbia COMS E6998</div><h1>HPML Interactive Simulations</h1>
+<p class="lead">Small interactive models used in the High-Performance Machine Learning lectures. Change a setting and see the memory, time or traffic change. Each lab works offline and needs no installation.</p>
+<div class="grid">
+<article class="card"><div class="tag">Lecture 7 | Distributed Data Parallelism</div><h2><a href="lecture-7-ddp/index.html">DDP Simulation Lab</a></h2><p>Six interactive pages on how gradients are combined across GPUs: collectives, ring all-reduce, algorithm cost, overlap of communication with the backward pass, multi-node bandwidth, and stragglers.</p><div class="chips"><a href="lecture-7-ddp/index.html#primer">Start here: collectives</a><a href="lecture-7-ddp/index.html#ring">Ring all-reduce</a><a href="lecture-7-ddp/index.html#cost">Algorithm cost</a><a href="lecture-7-ddp/index.html#overlap">DDP overlap</a><a href="lecture-7-ddp/index.html#nodes">Across nodes</a><a href="lecture-7-ddp/index.html#stragglers">Stragglers</a></div></article>
+<article class="card"><div class="tag">Lecture 8 | LLM-Scale Parallelism</div><h2><a href="lecture-8-llm-scale/index.html">LLM-Scale Parallelism Simulation Lab</a></h2><p>Four interactive pages on training models that do not fit on one GPU: memory per GPU with ZeRO, splitting an MLP for tensor parallelism, pipeline schedules, and planning a 4D parallel run.</p><div class="chips"><a href="lecture-8-llm-scale/index.html#memory">Memory per GPU</a><a href="lecture-8-llm-scale/index.html#tpsplit">Split an MLP</a><a href="lecture-8-llm-scale/index.html#pipeline">Pipeline schedules</a><a href="lecture-8-llm-scale/index.html#plan4d">Plan a 4D run</a></div></article>
+</div>
+<p class="note">All numbers come from simple analytical models taught in the lectures. They show how the pieces scale and are estimates. Dr. Kaoutar El Maghraoui, Columbia University.</p>
+</div></body></html>
